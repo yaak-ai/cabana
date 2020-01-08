@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Moment from 'moment';
 import _ from 'lodash';
 import cx from 'classnames';
-import CommaAuth from '@commaai/my-comma-auth';
+import CommaAuth from '../../services/yaak-auth';
 
 import { EXPLORER_URL } from '../../config';
 import Modal from './baseModal';

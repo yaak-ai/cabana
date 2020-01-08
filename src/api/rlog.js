@@ -1,5 +1,5 @@
-import { raw as RawDataApi, request as Request } from '@commaai/comma-api';
-import CommaAuth from '@commaai/my-comma-auth';
+import { request as Request } from '../services/yaak-api';
+import CommaAuth from '../services/yaak-auth';
 import request from 'simple-get';
 
 const urlStore = {};

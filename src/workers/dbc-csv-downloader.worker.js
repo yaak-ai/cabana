@@ -1,7 +1,5 @@
 /* eslint-env worker */
 /* eslint-disable no-restricted-globals */
-// import Sentry from '../logging/Sentry';
-
 import NumpyLoader from '../utils/loadnpy';
 
 const MAX_CONNECTIONS = 8;

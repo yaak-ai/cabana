@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { video as VideoApi } from '@commaai/comma-api';
+import { video as VideoApi } from '../services/yaak-api';
 
 import HLS from './HLS';
 import RouteSeeker from './RouteSeeker/RouteSeeker';
@@ -63,6 +63,7 @@ export default class RouteVideoSync extends Component {
   }
 
   componentWillMount() {
+    console.log("URL", this.props.url)
     let videoApi = VideoApi(this.props.url, process.env.REACT_APP_VIDEO_CDN);
     videoApi.getQcameraStreamIndex().then(() => {
       this.setState({source: videoApi.getQcameraStreamIndexUrl()});

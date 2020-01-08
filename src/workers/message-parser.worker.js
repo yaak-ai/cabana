@@ -1,6 +1,5 @@
 /* eslint-env worker */
 /* eslint-disable no-restricted-globals */
-import Sentry from '../logging/Sentry';
 import DBC from '../models/can/dbc';
 import DbcUtils from '../utils/dbc';
 

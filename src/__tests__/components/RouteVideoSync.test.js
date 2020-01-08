@@ -1,4 +1,3 @@
-import API from '@commaai/comma-api';
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import { StyleSheetTestUtils } from 'aphrodite';

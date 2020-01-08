@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { createWriteStream } from 'streamsaver';
 import Panda from '@commaai/pandajs';
-import CommaAuth from '@commaai/my-comma-auth';
-import { raw as RawDataApi, drives as DrivesApi } from '@commaai/comma-api';
+import CommaAuth from './services/yaak-auth';
+import { raw as RawDataApi, drives as DrivesApi } from './services/yaak-api';
 import { timeout, interval } from 'thyming';
 import {
   USE_UNLOGGER,
@@ -1314,7 +1314,7 @@ export default class CanExplorer extends Component {
           <a className="cabana-header-logo" href="">
             Comma Cabana
           </a>
-          <div className="cabana-header-account">
+          {/* <div className="cabana-header-account">
             {this.state.isGithubAuthenticated ? (
               <div>
                 <p>GitHub Authenticated</p>
@@ -1328,7 +1328,7 @@ export default class CanExplorer extends Component {
             ) : (
               this.loginWithGithub()
             )}
-          </div>
+          </div> */}
         </div>
         <div className="cabana-window">
           <Meta
